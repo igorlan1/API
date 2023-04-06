@@ -6,10 +6,10 @@ class UsersController {
             password
         } = request.body
 
-        response.json({
+        response.status(201).json({
             name,
             email,
-            password 
+            password
         })
     }
 
