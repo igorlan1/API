@@ -1,6 +1,7 @@
 require ("express-async-errors")
 
 const AppError = require("./utils/AppError")
+
 const express = require("express");
 
 const routes  = require("./routes") 
@@ -24,7 +25,6 @@ return response.status(500).json({
     status:"error",
     message:"internal server error",
 });
-
 })
 
 const PORT = 3333;
